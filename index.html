@@ -12,6 +12,12 @@
     crossorigin="anonymous"></script>
 </head>
 <body>
-
+  <button
+    hx-get="https://v2.jokeapi.dev/joke/Any?format=txt&safe-mode&type=single"
+    hx-target="#joke-container"
+  >
+    Make me laugh!
+  </button>
+  <p id="joke-container">Click the button to load a joke...</p>
 </body>
 </html>
