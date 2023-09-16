@@ -19,5 +19,19 @@
     Make me laugh!
   </button>
   <p id="joke-container">Click the button to load a joke...</p>
+
+  <hr>
+
+  <label>Keyword:
+    <input
+      type="text"
+      placeholder="Enter a keyword..."
+      hx-get="https://v2.jokeapi.dev/joke/Any?format=txt&safe-mode"
+      hx-target="#joke-container-2"
+      name="confirm"
+    />
+  </label>
+
+  <p id="joke-container-2">Results will appear here</p>
 </body>
 </html>
